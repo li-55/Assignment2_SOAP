@@ -1,0 +1,16 @@
+POST http://localhost:8080/services/soap-assignment HTTP/1.1
+Accept-Encoding: gzip,deflate
+Content-Type: text/xml;charset=UTF-8
+SOAPAction: ""
+Content-Length: 230
+Host: localhost:8080
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.5 (Java/16.0.1)
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ass="http://assignment2_soap.example.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ass:Download/>
+   </soapenv:Body>
+</soapenv:Envelope>
